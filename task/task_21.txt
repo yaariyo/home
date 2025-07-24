@@ -1,0 +1,15 @@
+Task 21: Set Up and Customize Posty Next.js Template
+
+Context:
+The foundation of Yaariyo is the Posty Next.js template. Setting up and customizing this template is the first step in building the platform, ensuring it meets the unique needs of Yaariyo’s vision and requirements.
+
+Acceptance Criteria:
+- Posty Next.js template is installed and running locally and in the development environment.
+- Customizations are made to reflect Yaariyo branding, structure, and initial feature set.
+- Codebase is documented and version-controlled.
+
+Subtasks:
+1. Install the Posty Next.js template in the project repository.
+2. Customize branding, layout, and navigation to match Yaariyo’s vision.
+3. Set up version control and initial documentation.
+4. Test the customized template for stability and readiness for further development. 

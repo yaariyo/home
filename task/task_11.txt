@@ -1,0 +1,16 @@
+Task 11: Implement Admin Analytics Features
+
+Context:
+Admin analytics are crucial for monitoring platform growth, engagement, and compliance. Yaariyo should provide dashboards for growth, engagement, flagged content, and regional/language insights.
+
+Acceptance Criteria:
+- Admins can view dashboards showing user growth, engagement, and flagged content statistics.
+- Regional and language-specific analytics are available.
+- Analytics data is exportable for reporting and compliance.
+
+Subtasks:
+1. Design and implement admin analytics dashboards.
+2. Integrate data sources for growth, engagement, and flagged content.
+3. Add regional and language-specific analytics views.
+4. Implement data export functionality for reports.
+5. Test analytics features for accuracy and usability. 

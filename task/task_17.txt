@@ -1,0 +1,15 @@
+Task 17: Implement Compliance - Automated Moderation for Unlawful Content
+
+Context:
+To comply with Indian IT Rules 2021, Yaariyo must proactively moderate unlawful content using AI screening (keywords, images, language-aware) and human review, supporting multiple Indian languages.
+
+Acceptance Criteria:
+- AI-based moderation is implemented for text, images, and multi-lingual content.
+- Human review workflows are in place for flagged content.
+- Moderation system is effective in detecting and handling unlawful content.
+
+Subtasks:
+1. Integrate AI screening for keywords, images, and language detection.
+2. Develop human-in-the-loop review workflows for flagged content.
+3. Support moderation in all supported Indian languages.
+4. Test moderation system for accuracy, speed, and compliance. 

@@ -1,0 +1,15 @@
+Task 25: Implement First Version of User Profiles & Settings
+
+Context:
+User profiles and settings are essential for personalization and privacy. The first version should allow users to view and edit their profile, set privacy preferences, and manage basic account settings.
+
+Acceptance Criteria:
+- Users can view and edit their profile information (name, photo, bio, etc.).
+- Users can set privacy preferences for their profile and posts.
+- Basic account settings (language, notifications, etc.) are available.
+
+Subtasks:
+1. Design and implement user profile view and edit screens.
+2. Add privacy settings for profiles and posts.
+3. Build basic account settings interface (language, notifications).
+4. Test user profile and settings features for usability and security. 

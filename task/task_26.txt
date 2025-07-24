@@ -1,0 +1,15 @@
+Task 26: Integrate i18n for Multi-Language Support
+
+Context:
+Multi-language support is a core requirement for Yaariyo, enabling accessibility and engagement across India. The platform must support Hindi, Tamil, Telugu, Bengali, Marathi, and English at minimum.
+
+Acceptance Criteria:
+- All user-facing text is available in Hindi, Tamil, Telugu, Bengali, Marathi, and English.
+- Language switching is seamless and available throughout the app.
+- New features are built with i18n in mind.
+
+Subtasks:
+1. Set up i18n framework in the Next.js application.
+2. Translate all user-facing text into supported languages.
+3. Implement language switcher UI and logic.
+4. Test multi-language support for completeness and usability. 

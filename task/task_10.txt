@@ -1,0 +1,15 @@
+Task 10: Implement User Privacy & Data Control Features
+
+Context:
+User privacy and data control are essential for building trust and meeting legal requirements. Yaariyo must provide granular sharing settings for posts and profiles, and allow users to download or delete their account/data.
+
+Acceptance Criteria:
+- Users can set granular privacy/sharing settings for posts and profiles.
+- Users can request and download their data in a standard format.
+- Users can delete their account and all associated data.
+
+Subtasks:
+1. Develop privacy/sharing settings UI and backend for posts and profiles.
+2. Implement data download functionality (GDPR-style export).
+3. Implement account/data deletion workflows.
+4. Test privacy and data control features for security and compliance. 

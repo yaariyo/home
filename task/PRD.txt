@@ -1,0 +1,106 @@
+Product Requirements Document (PRD) — Yaariyo (Posty/Next.js Foundation)
+1. Project Scope & Vision
+Yaariyo is a friendship-first, India-centric social media platform, leveraging the Posty Next.js template as the baseline. It is designed for multi-lingual usage, vibrant communities, and integrated compliance with Indian IT rules 2021. The platform is scalable, mobile-friendly, open-source driven, and prioritizes trust, cultural relevance, and local engagement.
+2. Core Objectives
+•	Launch a secure, user-friendly, India-oriented social platform.
+•	Support Hindi, Tamil, Telugu, Bengali, Marathi, and English at minimum.
+•	Empower user communities, creators, and local commerce.
+•	Operate with full compliance to Indian IT Rules 2021 and related legal norms.
+3. High-Level Features
+1.	Account Management
+o	Registration (email/mobile/social)
+o	Multi-language onboarding
+o	Profile edit, privacy controls, 2FA
+2.	Posts & Engagement
+o	Create (text, images, video), comment, like, share, report
+o	Feeds (global, regional, interest, language-specific)
+o	Support for hashtags, mentions, and media uploads
+3.	Groups & Communities
+o	Create/join groups based on interests, locations, or culture
+o	Moderation controls for admins
+4.	Notifications
+o	Real-time, multi-device sync
+o	Customizable notification settings
+5.	Creator Ecosystem
+o	Creator badges, analytics, and monetization (tips/gifts)
+o	Challenges, polls, and festival themed events
+6.	Social Commerce
+o	Product showcase within communities
+o	UPI links to local sellers
+7.	Moderation & Trust
+o	AI-powered and human-in-the-loop content filtering
+o	Simple, always-accessible report/flag button
+8.	User Privacy & Data Control
+o	Granular sharing settings for posts and profiles
+o	Download/delete account/data
+9.	Admin Analytics
+o	Dashboard for growth, engagement, flagged content
+o	Regional/language insights
+4. 100% Compliance with Indian IT Rules 2021
+Compliance Requirement	Solution
+Grievance Officer (India resident)	Appoint staff; publish email/contact
+Timely content takedown (<36h) upon legal notice	Automated takedown queue; priority flag in admin UI
+User reporting & flagging in-app	Prominent “report” button on every post/comment
+Publish Terms, Privacy, and Guidelines	Multi-language pages in footer & onboarding
+Resolve user complaints <15 days	Grievance admin ticket dashboard
+Periodic transparency reports	Auto-generated, admin-reviewed public update system
+Automated moderation for unlawful content (multi-lingual)	AI screening (keywords, images, language aware) + human review
+Content and log record retention	Store logs securely for minimum period as mandated
+Proactive user education on rights & responsibilities	Onboarding tour, community policies, FAQ
+Data residency (if sensitive data required by law to be local)	Ensure DB hosted in India (or hybrid compliant)
+
+5. Development Task Breakdown
+Phase 1: Foundation (Weeks 1–4)
+•	[ ] Set up and customize Posty Next.js template
+•	[ ] Establish database connection (Supabase/PostgreSQL)
+•	[ ] Configure initial auth flows (multi-language, multi-provider)
+•	[ ] Deploy basic post creation, feed, and commenting
+•	[ ] Implement first version of user profiles & settings
+Phase 2: Multi-Lingual & Community (Weeks 4–8)
+•	[ ] Integrate i18n (Hindi, Tamil, Telugu, Bengali, Marathi, English)
+•	[ ] Add language-switch UI
+•	[ ] Develop groups/communities: create, join, admin tools
+•	[ ] Launch notification module (web/mobile)
+•	[ ] Mobile and low-bandwidth optimizations
+Phase 3: Compliance & Moderation (Weeks 8–12)
+•	[ ] Legal terms, privacy, guidelines—multi-language, easy access
+•	[ ] Set up automated and manual moderation panel
+•	[ ] User content flag/report workflow
+•	[ ] Grievance officer admin module
+•	[ ] Takedown queue, complaint ticket system
+•	[ ] Admin logs for all moderation actions, exportable as reports
+•	[ ] Enable data download and deletion
+Phase 4: Creator Tools & Social Commerce (Weeks 12–16)
+•	[ ] Creator badges and leaderboards
+•	[ ] Festival/friendly event content themes and challenges
+•	[ ] In-app monetization (tipping/gifting via UPI)
+•	[ ] Commerce posts for registered local sellers
+Phase 5: Analytics, QA, & Launch (Weeks 16–20)
+•	[ ] Admin analytics: growth, flagged content, regional usage
+•	[ ] Community trend/highlight dashboards
+•	[ ] Performance testing (load, bandwidth, accessibility)
+•	[ ] Security audit
+•	[ ] Complete documentation, user onboarding flow, help center
+•	[ ] Launch readiness checklist; dry run
+6. User & Legal Experience Requirements
+•	Every step of account creation/posting/reporting accessible in any supported language.
+•	Reports/takedowns visible to admin within seconds for urgent action.
+•	Moderation staff training in legal removal timelines and escalation procedures.
+•	Clear interface for users to raise grievances, with transparent tracking.
+•	Public policy and compliance documentation, regularly updated.
+7. Documentation & Continuous Improvement
+•	Update PRD as legal or market requirements change.
+•	Document new community guidelines or compliance changes within release notes.
+•	Regular review of moderation efficacy and user safety with executive stakeholders.
+8. Success Metrics
+•	100% documented and auditable compliance with Indian IT Rules 2021
+•	<12 hours median government/legal takedown response
+•	95%+ feature usage (posting/reporting) across all major Indian languages
+•	Uptime 99.9%+; performance acceptable on low-tier Indian smartphones
+•	User complaint resolution median time <7 days
+9. Stakeholders
+•	Product/Tech lead (oversees PRD compliance and delivery)
+•	Development team (Next.js, mobile, backend, infra)
+•	Legal/compliance officer (interface with Indian authorities)
+•	Grievance redressal officer
+•	Community/moderation management

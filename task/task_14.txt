@@ -1,0 +1,15 @@
+Task 14: Implement Compliance - Terms, Privacy, and Guidelines Publishing
+
+Context:
+Indian IT Rules 2021 require that the platform’s terms of service, privacy policy, and community guidelines are published and easily accessible in multiple languages, both in the footer and during onboarding.
+
+Acceptance Criteria:
+- Terms of service, privacy policy, and guidelines are available in all supported languages.
+- These documents are accessible from the site footer and onboarding flow.
+- Users can easily find and read these documents at any time.
+
+Subtasks:
+1. Draft and translate terms, privacy, and guidelines into all supported languages.
+2. Add links to these documents in the site footer and onboarding screens.
+3. Ensure documents are accessible and readable on all devices.
+4. Test accessibility and visibility of compliance documents. 

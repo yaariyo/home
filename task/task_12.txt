@@ -1,0 +1,15 @@
+Task 12: Implement Compliance - Grievance Officer & Takedown Process
+
+Context:
+Compliance with Indian IT Rules 2021 requires appointing a resident Grievance Officer, publishing their contact, and ensuring timely content takedown (<36h) upon legal notice. The process must be automated and visible in the admin UI.
+
+Acceptance Criteria:
+- A resident Grievance Officer is appointed and contact details are published.
+- Legal takedown requests are processed within 36 hours.
+- Admin UI includes a takedown queue and priority flagging for urgent cases.
+
+Subtasks:
+1. Appoint a Grievance Officer and publish their contact information on the platform.
+2. Develop an automated takedown queue system in the admin UI.
+3. Implement priority flagging for urgent takedown requests.
+4. Test the takedown process for compliance with legal timelines. 

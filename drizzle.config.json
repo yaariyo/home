@@ -1,0 +1,12 @@
+{
+  "schema": "./drizzle/schema.ts",
+  "out": "./drizzle/migrations",
+  "dialect": "mysql",
+  "dbCredentials": {
+    "host": "localhost",
+    "port": 3306,
+    "user": "yaariyo_user",
+    "password": "3Y$T7pgS@6Y9",
+    "database": "yaariyo_db"
+  }
+} 

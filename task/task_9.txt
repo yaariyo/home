@@ -1,0 +1,15 @@
+Task 9: Implement Moderation & Trust Features
+
+Context:
+Moderation and trust are vital for user safety and platform compliance. Yaariyo must combine AI-powered and human-in-the-loop content filtering, and provide a simple, always-accessible report/flag button for users.
+
+Acceptance Criteria:
+- AI-powered content filtering is implemented for text, images, and multi-lingual content.
+- Human moderation workflows are established for flagged content.
+- Every post and comment has a prominent report/flag button.
+
+Subtasks:
+1. Integrate AI-based content filtering for posts and comments.
+2. Develop human moderation panel and workflows.
+3. Add report/flag buttons to all user-generated content.
+4. Test moderation and trust features for effectiveness and compliance. 

@@ -1,0 +1,15 @@
+Task 13: Implement Compliance - User Reporting & Flagging
+
+Context:
+To comply with Indian IT Rules 2021 and ensure user safety, Yaariyo must provide a prominent, always-accessible report/flag button on every post and comment. This enables users to easily report content for review.
+
+Acceptance Criteria:
+- Every post and comment has a visible report/flag button.
+- Reported content is immediately visible to admins for urgent action.
+- The reporting workflow is simple and accessible in all supported languages.
+
+Subtasks:
+1. Add report/flag buttons to all posts and comments in the UI.
+2. Implement backend logic to log and queue reported content for admin review.
+3. Ensure reporting workflow is available in all supported languages.
+4. Test the reporting and flagging process for usability and compliance. 

@@ -1,0 +1,15 @@
+Task 29: Launch Notification Module (Web/Mobile)
+
+Context:
+Timely notifications are essential for user engagement. Yaariyo must provide real-time notifications on both web and mobile, with support for multi-device sync and customizable notification settings.
+
+Acceptance Criteria:
+- Users receive real-time notifications for relevant activities (likes, comments, group invites, etc.).
+- Notifications are synchronized across all user devices.
+- Users can customize notification preferences (push, email, in-app).
+
+Subtasks:
+1. Implement real-time notification delivery for web and mobile.
+2. Develop notification sync logic for multi-device support.
+3. Build a user interface for notification settings and preferences.
+4. Test notification delivery, sync, and customization features. 

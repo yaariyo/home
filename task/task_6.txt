@@ -1,0 +1,15 @@
+Task 6: Implement Notifications Features
+
+Context:
+Notifications are critical for user engagement and timely updates. Yaariyo must support real-time notifications, multi-device sync, and customizable notification settings for users.
+
+Acceptance Criteria:
+- Users receive real-time notifications for relevant activities (e.g., likes, comments, group invites).
+- Notifications are synchronized across all user devices.
+- Users can customize which notifications they receive and how (push, email, in-app).
+
+Subtasks:
+1. Design and implement real-time notification delivery (web and mobile).
+2. Develop notification sync logic for multi-device support.
+3. Build a user interface for notification settings and preferences.
+4. Test notification delivery, sync, and customization features. 

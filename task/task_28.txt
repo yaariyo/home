@@ -1,0 +1,15 @@
+Task 28: Develop Groups/Communities - Create, Join, Admin Tools
+
+Context:
+Groups and communities are central to Yaariyo’s engagement model. Users should be able to create and join groups, and group admins need tools for moderation and management.
+
+Acceptance Criteria:
+- Users can create and join groups based on interests, locations, or culture.
+- Group admins have access to moderation and management tools.
+- Group discovery and joining is intuitive and accessible.
+
+Subtasks:
+1. Implement group creation and joining flows.
+2. Build admin tools for group moderation (member management, content controls).
+3. Develop group discovery and search features.
+4. Test group/community features for usability and security. 

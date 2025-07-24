@@ -1,0 +1,15 @@
+Task 20: Implement Compliance - Data Residency
+
+Context:
+Indian IT Rules 2021 may require that sensitive user data is stored within India or in a compliant hybrid setup. Yaariyo must ensure its database and sensitive data storage meet these requirements.
+
+Acceptance Criteria:
+- All sensitive user data is stored in India or in a legally compliant hybrid environment.
+- Data residency policies are documented and enforced.
+- Platform is auditable for data residency compliance.
+
+Subtasks:
+1. Audit current data storage locations and providers.
+2. Migrate sensitive data to India-based or compliant hybrid infrastructure if needed.
+3. Document and enforce data residency policies.
+4. Test and verify data residency compliance with legal requirements. 

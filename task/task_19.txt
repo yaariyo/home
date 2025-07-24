@@ -1,0 +1,15 @@
+Task 19: Implement Compliance - Proactive User Education
+
+Context:
+Indian IT Rules 2021 require platforms to proactively educate users about their rights and responsibilities. This includes onboarding tours, community policies, and accessible FAQs.
+
+Acceptance Criteria:
+- Onboarding tour educates users about platform rules, rights, and responsibilities.
+- Community policies and FAQs are accessible in all supported languages.
+- Users are regularly reminded of key policies and updates.
+
+Subtasks:
+1. Design and implement an onboarding tour covering user rights and responsibilities.
+2. Draft and translate community policies and FAQs into all supported languages.
+3. Add accessible links to policies and FAQs throughout the platform.
+4. Set up periodic reminders or notifications for key policy updates. 

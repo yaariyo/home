@@ -1,0 +1,15 @@
+Task 1: Define Project Scope & Vision
+
+Context:
+Yaariyo aims to be a friendship-first, India-centric social media platform, leveraging the Posty Next.js template. The platform must be scalable, mobile-friendly, open-source, and prioritize trust, cultural relevance, and local engagement.
+
+Acceptance Criteria:
+- A clear, documented project vision statement is created and approved by stakeholders.
+- The vision addresses multi-lingual usage, vibrant communities, and compliance with Indian IT rules 2021.
+- The scope includes scalability, mobile-friendliness, and open-source principles.
+
+Subtasks:
+1. Draft a project vision statement reflecting the above goals.
+2. Review and refine the vision with input from stakeholders.
+3. Document the final scope and vision in the project repository.
+4. Ensure alignment with Indian IT Rules 2021 and local engagement priorities. 

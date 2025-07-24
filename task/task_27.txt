@@ -1,0 +1,15 @@
+Task 27: Add Language-Switch UI
+
+Context:
+A user-friendly language-switch UI is essential for accessibility and inclusivity. Users should be able to easily switch between supported languages at any point in the app.
+
+Acceptance Criteria:
+- Language-switch UI is accessible from all major screens.
+- Switching languages updates all user-facing text instantly.
+- The UI is intuitive and works on both web and mobile devices.
+
+Subtasks:
+1. Design and implement a language-switch component.
+2. Integrate the component into the app’s header, footer, and settings.
+3. Ensure instant update of all user-facing text upon language change.
+4. Test the language-switch UI for usability and responsiveness. 

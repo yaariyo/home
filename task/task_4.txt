@@ -1,0 +1,17 @@
+Task 4: Implement Posts & Engagement Features
+
+Context:
+Posts and engagement are at the heart of Yaariyo’s social experience. Users must be able to create posts (text, images, video), comment, like, share, and report content. The feed should support global, regional, interest, and language-specific filtering, as well as hashtags, mentions, and media uploads.
+
+Acceptance Criteria:
+- Users can create posts with text, images, and video.
+- Users can comment, like, share, and report posts.
+- Feeds are filterable by region, interest, and language.
+- Hashtags, mentions, and media uploads are fully supported.
+
+Subtasks:
+1. Develop post creation UI and backend for text, images, and video.
+2. Implement comment, like, share, and report functionality.
+3. Build feed filtering by global, regional, interest, and language.
+4. Add support for hashtags, mentions, and media uploads.
+5. Test engagement features for usability and performance. 

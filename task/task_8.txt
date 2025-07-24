@@ -1,0 +1,15 @@
+Task 8: Implement Social Commerce Features
+
+Context:
+Social commerce enables users and communities to showcase products and connect with local sellers. The platform should support product showcases within communities and integrate UPI links for seamless payments to local sellers.
+
+Acceptance Criteria:
+- Users and communities can showcase products within groups or posts.
+- UPI payment links are integrated for direct transactions with local sellers.
+- Product discovery and purchase flows are user-friendly and secure.
+
+Subtasks:
+1. Design and implement product showcase features for communities and users.
+2. Integrate UPI payment links for local sellers.
+3. Build product discovery and purchase interfaces.
+4. Test social commerce features for usability, security, and compliance. 

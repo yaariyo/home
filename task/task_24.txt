@@ -1,0 +1,15 @@
+Task 24: Deploy Basic Post Creation, Feed, and Commenting
+
+Context:
+Core social features must be available early in development. Users should be able to create posts, view a feed, and comment on posts, forming the foundation for engagement and community building.
+
+Acceptance Criteria:
+- Users can create posts (text, images, video) and view them in a feed.
+- Users can comment on posts and view comments in real time.
+- Feed updates dynamically as new posts and comments are added.
+
+Subtasks:
+1. Implement post creation UI and backend for text, images, and video.
+2. Build the main feed to display posts in real time.
+3. Develop commenting functionality for posts.
+4. Test post creation, feed, and commenting for usability and performance. 

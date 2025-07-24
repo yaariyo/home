@@ -1,0 +1,15 @@
+Task 18: Implement Compliance - Content and Log Record Retention
+
+Context:
+Indian IT Rules 2021 require that content and log records are securely stored for a minimum period as mandated by law. This ensures traceability and compliance in case of investigations or audits.
+
+Acceptance Criteria:
+- All user-generated content and logs are securely stored for the legally required retention period.
+- Data storage is secure and access-controlled.
+- Retention and deletion policies are documented and enforced.
+
+Subtasks:
+1. Implement secure storage for content and log records.
+2. Define and enforce data retention and deletion policies.
+3. Document retention policies for compliance and audits.
+4. Test storage and retention systems for security and reliability. 

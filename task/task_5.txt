@@ -1,0 +1,15 @@
+Task 5: Implement Groups & Communities Features
+
+Context:
+Groups and communities are essential for fostering vibrant, interest-based, and culturally relevant interactions on Yaariyo. Users should be able to create and join groups based on interests, locations, or culture, with robust moderation controls for group admins.
+
+Acceptance Criteria:
+- Users can create and join groups based on interests, locations, or culture.
+- Group admins have access to moderation tools (e.g., member management, content approval, removal).
+- Group discovery and joining is intuitive and accessible.
+
+Subtasks:
+1. Design and implement group creation and joining flows.
+2. Build group admin moderation tools (member management, content controls).
+3. Develop group discovery and search features.
+4. Test group/community features for usability and security. 

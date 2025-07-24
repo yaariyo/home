@@ -1,0 +1,16 @@
+Task 22: Establish Database Connection (Supabase/PostgreSQL)
+
+Context:
+A robust and scalable database is essential for Yaariyo’s functionality. The platform should connect to Supabase or PostgreSQL, supporting all core features and ensuring data integrity and security.
+
+Acceptance Criteria:
+- Database (Supabase or PostgreSQL) is set up and connected to the application.
+- Database schema supports user accounts, posts, groups, notifications, and other core features.
+- Secure connection and access controls are implemented.
+
+Subtasks:
+1. Set up Supabase or PostgreSQL instance for the project.
+2. Design and implement the initial database schema.
+3. Connect the Next.js application to the database.
+4. Implement access controls and security best practices.
+5. Test database operations for reliability and performance. 

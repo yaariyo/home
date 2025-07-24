@@ -1,0 +1,12 @@
+{
+  "/api/login/route": "app/api/login/route.js",
+  "/api/session/route": "app/api/session/route.js",
+  "/api/verify-email/route": "app/api/verify-email/route.js",
+  "/api/logout/route": "app/api/logout/route.js",
+  "/register/page": "app/register/page.js",
+  "/login/page": "app/login/page.js",
+  "/verify-email/page": "app/verify-email/page.js",
+  "/page": "app/page.js",
+  "/author-details/page": "app/author-details/page.js",
+  "/logout/page": "app/logout/page.js"
+}
