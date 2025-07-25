@@ -26,56 +26,40 @@
       "static/chunks/main-app.js",
       "static/chunks/app/api/session/route.js"
     ],
-    "/api/register/route": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/api/register/route.js"
-    ],
     "/login/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/login/page.js"
-    ],
-    "/api/login/route": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/api/login/route.js"
-    ],
-    "/verify-email/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/verify-email/page.js"
     ],
     "/_not-found/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/_not-found/page.js"
     ],
-    "/api/verify-email/route": [
+    "/api/register/route": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/api/verify-email/route.js"
+      "static/chunks/app/api/register/route.js"
     ],
-    "/page": [
+    "/forgot-password/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/page.css",
-      "static/chunks/app/page.js"
+      "static/chunks/app/forgot-password/page.js"
     ],
-    "/author-details/page": [
+    "/api/forgot-password/route": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/author-details/page.js"
+      "static/chunks/app/api/forgot-password/route.js"
     ],
-    "/logout/page": [
+    "/reset-password/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/logout/page.js"
+      "static/chunks/app/reset-password/page.js"
     ],
-    "/api/logout/route": [
+    "/api/reset-password/route": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/api/logout/route.js"
+      "static/chunks/app/api/reset-password/route.js"
     ]
   }
 }

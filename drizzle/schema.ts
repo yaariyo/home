@@ -6,6 +6,8 @@ export const users = mysqlTable('users', {
   email: varchar('email', { length: 255 }).notNull().unique(),
   password: varchar('password', { length: 255 }).notNull(),
   mobile: varchar('mobile', { length: 20 }),
+  gender: varchar('gender', { length: 20 }), // 'male', 'female', 'transgender'
+  dob: datetime('dob'),
   country: varchar('country', { length: 100 }),
   createdAt: datetime('created_at').notNull(),
   resetToken: varchar('reset_token', { length: 255 }),
@@ -13,4 +15,12 @@ export const users = mysqlTable('users', {
   emailVerified: boolean('email_verified').notNull().default(false),
   emailVerificationToken: varchar('email_verification_token', { length: 255 }),
   emailVerificationTokenExpiry: int('email_verification_token_expiry'),
+});
+
+export const otps = mysqlTable('otps', {
+  id: int('id').autoincrement().primaryKey(),
+  mobile: varchar('mobile', { length: 20 }).notNull(),
+  otp: varchar('otp', { length: 10 }).notNull(),
+  expiresAt: datetime('expires_at').notNull(),
+  verified: boolean('verified').notNull().default(false),
 }); 
