@@ -26,6 +26,12 @@ export default function RegisterInline() {
   const [agreed, setAgreed] = useState(false);
   const [role, setRole] = useState('Employee');
 
+  // Captcha state
+  const [captchaA, setCaptchaA] = useState(() => Math.floor(Math.random() * 10) + 1);
+  const [captchaB, setCaptchaB] = useState(() => Math.floor(Math.random() * 10) + 1);
+  const [captchaInput, setCaptchaInput] = useState("");
+  const [captchaError, setCaptchaError] = useState("");
+
   useEffect(() => {
     fetch("/api/session").then(async (res) => {
       if (res.ok) {
@@ -44,6 +50,12 @@ export default function RegisterInline() {
     setError("");
     setSuccess("");
     setLoading(true);
+    setCaptchaError("");
+    if (parseInt(captchaInput, 10) !== captchaA + captchaB) {
+      setCaptchaError("Captcha answer is incorrect.");
+      setLoading(false);
+      return;
+    }
     if (!agreed) {
       setError("You must agree to the Terms & Conditions and Privacy Policy.");
       setLoading(false);
@@ -210,6 +222,20 @@ export default function RegisterInline() {
                 I agree to the <a href="/terms" target="_blank" style={{ color: '#6366f1', textDecoration: 'underline', margin: '0 4px' }}>Terms & Conditions</a> and <a href="/privacy" target="_blank" style={{ color: '#6366f1', textDecoration: 'underline', margin: '0 4px' }}>Privacy Policy</a>
               </label>
             </div>
+            <div style={{ display: 'flex', justifyContent: 'center', width: '100%', marginBottom: 12 }}>
+              <label htmlFor="register-captcha" style={{ fontWeight: 500, marginRight: 8 }}>
+                What is {captchaA} + {captchaB}?
+              </label>
+              <input
+                id="register-captcha"
+                type="number"
+                value={captchaInput}
+                onChange={e => setCaptchaInput(e.target.value)}
+                style={{ width: 60, marginLeft: 8, borderRadius: 6, border: '1px solid #d1d5db', padding: '6px 8px' }}
+                required
+              />
+            </div>
+            {captchaError && <div style={{ color: "#dc2626", marginBottom: 10, fontWeight: 500 }}>{captchaError}</div>}
             {error && <div style={{ color: "#dc2626", marginBottom: 10, fontWeight: 500 }}>{error}</div>}
             {success && <div style={{ color: "#059669", marginBottom: 10, fontWeight: 500 }}>{success}</div>}
             <div style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>

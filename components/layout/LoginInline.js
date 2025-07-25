@@ -12,6 +12,12 @@ export default function LoginInline() {
   const [showPassword, setShowPassword] = useState(false);
   const router = useRouter();
 
+  // Captcha state
+  const [captchaA, setCaptchaA] = useState(() => Math.floor(Math.random() * 10) + 1);
+  const [captchaB, setCaptchaB] = useState(() => Math.floor(Math.random() * 10) + 1);
+  const [captchaInput, setCaptchaInput] = useState("");
+  const [captchaError, setCaptchaError] = useState("");
+
   useEffect(() => {
     fetch("/api/session").then(async (res) => {
       if (res.ok) {
@@ -25,6 +31,12 @@ export default function LoginInline() {
     e.preventDefault();
     setLoading(true);
     setError("");
+    setCaptchaError("");
+    if (parseInt(captchaInput, 10) !== captchaA + captchaB) {
+      setCaptchaError("Captcha answer is incorrect.");
+      setLoading(false);
+      return;
+    }
     const res = await fetch("/api/login", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -133,6 +145,20 @@ export default function LoginInline() {
                 {showPassword ? '🙈' : '👁️'}
               </button>
             </div>
+            <div style={{ marginBottom: 16, textAlign: 'center' }}>
+              <label htmlFor="login-captcha" style={{ fontWeight: 500, marginRight: 8 }}>
+                What is {captchaA} + {captchaB}?
+              </label>
+              <input
+                id="login-captcha"
+                type="number"
+                value={captchaInput}
+                onChange={e => setCaptchaInput(e.target.value)}
+                style={{ width: 60, marginLeft: 8, borderRadius: 6, border: '1px solid #d1d5db', padding: '6px 8px' }}
+                required
+              />
+            </div>
+            {captchaError && <div style={{ color: "#dc2626", marginBottom: 10, fontWeight: 500 }}>{captchaError}</div>}
             {error && <div style={{ color: "#dc2626", marginBottom: 10, fontWeight: 500 }}>{error}</div>}
             <div style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
               <button type="submit" className="default-btn" disabled={loading} style={{

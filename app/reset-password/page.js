@@ -15,9 +15,21 @@ export default function ResetPasswordPage(props) {
   const router = useRouter();
   const token = params.get("token");
 
+  // Captcha state
+  const [captchaA, setCaptchaA] = useState(() => Math.floor(Math.random() * 10) + 1);
+  const [captchaB, setCaptchaB] = useState(() => Math.floor(Math.random() * 10) + 1);
+  const [captchaInput, setCaptchaInput] = useState("");
+  const [captchaError, setCaptchaError] = useState("");
+
   const handleSubmit = async e => {
     e.preventDefault();
     setMsg("");
+    setCaptchaError("");
+    if (parseInt(captchaInput, 10) !== captchaA + captchaB) {
+      setCaptchaError("Captcha answer is incorrect.");
+      setLoading(false);
+      return;
+    }
     if (password !== confirm) {
       setMsg("Passwords do not match.");
       return;
@@ -121,6 +133,20 @@ export default function ResetPasswordPage(props) {
             <form onSubmit={handleSubmit} style={{ width: '100%' }}>
               <input type="password" className="form-control" placeholder="New Password" value={password} onChange={e => setPassword(e.target.value)} required style={{ borderRadius: 8, padding: '14px', fontSize: 16, marginBottom: 12, width: '100%', background: 'var(--input-bg, #fff)', color: 'var(--form-text, #222)', border: '1px solid #d1d5db' }} />
               <input type="password" className="form-control" placeholder="Confirm Password" value={confirm} onChange={e => setConfirm(e.target.value)} required style={{ borderRadius: 8, padding: '14px', fontSize: 16, marginBottom: 12, width: '100%', background: 'var(--input-bg, #fff)', color: 'var(--form-text, #222)', border: '1px solid #d1d5db' }} />
+              <div style={{ marginBottom: 16, textAlign: 'center' }}>
+                <label htmlFor="reset-captcha" style={{ fontWeight: 500, marginRight: 8 }}>
+                  What is {captchaA} + {captchaB}?
+                </label>
+                <input
+                  id="reset-captcha"
+                  type="number"
+                  value={captchaInput}
+                  onChange={e => setCaptchaInput(e.target.value)}
+                  style={{ width: 60, marginLeft: 8, borderRadius: 6, border: '1px solid #d1d5db', padding: '6px 8px' }}
+                  required
+                />
+              </div>
+              {captchaError && <div style={{ color: "#dc2626", marginBottom: 10, fontWeight: 500 }}>{captchaError}</div>}
               <button className="default-btn w-100" type="submit" disabled={loading} style={{
                 borderRadius: 28,
                 fontWeight: 700,

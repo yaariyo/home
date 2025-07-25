@@ -10,10 +10,22 @@ export default function ForgotPasswordPage() {
   const [msg, setMsg] = useState("");
   const [loading, setLoading] = useState(false);
 
+  // Captcha state
+  const [captchaA, setCaptchaA] = useState(() => Math.floor(Math.random() * 10) + 1);
+  const [captchaB, setCaptchaB] = useState(() => Math.floor(Math.random() * 10) + 1);
+  const [captchaInput, setCaptchaInput] = useState("");
+  const [captchaError, setCaptchaError] = useState("");
+
   async function handleSubmit(e) {
     e.preventDefault();
     setMsg("");
     setLoading(true);
+    setCaptchaError("");
+    if (parseInt(captchaInput, 10) !== captchaA + captchaB) {
+      setCaptchaError("Captcha answer is incorrect.");
+      setLoading(false);
+      return;
+    }
     try {
       const res = await fetch("/api/forgot-password", {
         method: "POST",
@@ -145,6 +157,20 @@ export default function ForgotPasswordPage() {
                 required
                 style={{ borderRadius: 8, padding: '14px', fontSize: 16, marginBottom: 16, width: '100%', background: 'var(--input-bg, #fff)', color: 'var(--form-text, #222)', border: '1px solid #d1d5db' }}
               />
+              <div style={{ marginBottom: 16, textAlign: 'center' }}>
+                <label htmlFor="forgot-captcha" style={{ fontWeight: 500, marginRight: 8 }}>
+                  What is {captchaA} + {captchaB}?
+                </label>
+                <input
+                  id="forgot-captcha"
+                  type="number"
+                  value={captchaInput}
+                  onChange={e => setCaptchaInput(e.target.value)}
+                  style={{ width: 60, marginLeft: 8, borderRadius: 6, border: '1px solid #d1d5db', padding: '6px 8px' }}
+                  required
+                />
+              </div>
+              {captchaError && <div style={{ color: "#dc2626", marginBottom: 10, fontWeight: 500 }}>{captchaError}</div>}
               <button type="submit" className="default-btn w-100" disabled={loading} style={{
                 borderRadius: 28,
                 fontWeight: 700,

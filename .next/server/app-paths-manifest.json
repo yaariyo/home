@@ -1,8 +1,9 @@
 {
   "/api/session/route": "app/api/session/route.js",
-  "/api/reset-password/route": "app/api/reset-password/route.js",
+  "/api/login/route": "app/api/login/route.js",
   "/register/page": "app/register/page.js",
   "/login/page": "app/login/page.js",
   "/forgot-password/page": "app/forgot-password/page.js",
-  "/reset-password/page": "app/reset-password/page.js"
+  "/reset-password/page": "app/reset-password/page.js",
+  "/page": "app/page.js"
 }
