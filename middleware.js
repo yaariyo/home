@@ -17,6 +17,8 @@ const PUBLIC_PATHS = [
   '/api/session',
   '/verify-email',
   '/api/verify-email',
+  '/terms',
+  '/privacy',
 ];
 
 const JWT_SECRET = process.env.JWT_SECRET || 'dev-secret';
