@@ -1,3 +1,5 @@
+'use client';
+
 import Link from "next/link"
 import ThemeSwitch from "../elements/ThemeSwitch"
 import Menu from "./Menu"
